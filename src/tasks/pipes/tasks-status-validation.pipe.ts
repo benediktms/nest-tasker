@@ -18,7 +18,7 @@ export class TaskStatusValidationPipe implements PipeTransform {
     return value;
   }
 
-  private isStatusValid(status: any) {
+  private isStatusValid(status: any): boolean {
     const index = this.allowedStatuses.indexOf(status);
     return index !== -1;
   }
